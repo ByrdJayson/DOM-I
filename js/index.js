@@ -54,6 +54,12 @@ let navItem5 = document.querySelector('nav a:nth-of-type(5)')
 navItem5.textContent = siteContent['nav']['nav-item-5'];
 let navItem6 = document.querySelector('nav a:nth-of-type(6)')
 navItem6.textContent = siteContent['nav']['nav-item-6'];
+navItem1.style.color = 'green';
+navItem2.style.color = 'green';
+navItem3.style.color = 'green';
+navItem4.style.color = 'green';
+navItem5.style.color = 'green';
+navItem6.style.color = 'green';
 
 //CTA MANIPULATION
 let ctaImg = document.getElementById("cta-img");
