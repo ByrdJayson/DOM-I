@@ -78,11 +78,20 @@ mainHeader2.textContent = siteContent['main-content']['about-h4'];
 let mainP2 = document.querySelector('.text-content:nth-of-type(2) p');
 mainP2.textContent = siteContent['main-content']['about-content'];
 //THIRD BLOCK - BOTTOM
-let bottomHeader1 = document.querySelector('.text-content:nth-of-type(3) h4');
+let bottomHeader1 = document.querySelector('.bottom-content .text-content:nth-of-type(1) h4');
 bottomHeader1.textContent = siteContent['main-content']['services-h4'];
-let bottomP1 = document.querySelector('.text-content:nth-of-type(3) p');
+let bottomP1 = document.querySelector('.bottom-content .text-content:nth-of-type(1) p');
 bottomP1.textContent = siteContent['main-content']['services-content'];
 //FOURTH BLOCK - BOTTOM
+let bottomHeader2 = document.querySelector('.bottom-content .text-content:nth-of-type(2) h4');
+bottomHeader2.textContent = siteContent['main-content']['product-h4'];
+let bottomP2 = document.querySelector('.bottom-content .text-content:nth-of-type(2) p');
+bottomP2.textContent = siteContent['main-content']['product-content'];
+//FIFTH BLOCK - BOTTOM
+let bottomHeader3 = document.querySelector('.bottom-content .text-content:nth-of-type(3) h4');
+bottomHeader3.textContent = siteContent['main-content']['vision-h4'];
+let bottomP3 = document.querySelector('.bottom-content .text-content:nth-of-type(3) p');
+bottomP3.textContent = siteContent['main-content']['vision-content'];
 
 
 
