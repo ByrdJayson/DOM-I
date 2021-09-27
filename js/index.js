@@ -112,3 +112,14 @@ contactEmail.textContent = siteContent['contact']['email'];
 
 let footer = document.querySelector('footer p');
 footer.textContent = siteContent['footer']['copyright'];
+
+
+//ADDING NAV ELEMENTS
+const navElement = document.createElement('a'); //THIS IS ONLY IN JS
+navElement.textContent = 'SOMETHING';
+navElement.href = '#';
+document.querySelector('nav').appendChild(navElement);
+const navElement2 = document.createElement('a'); //THIS IS ONLY IN JS
+navElement2.textContent = 'SOMETHING 2';
+navElement2.href = '#';
+document.querySelector('nav').prepend(navElement2);
