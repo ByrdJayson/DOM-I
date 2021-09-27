@@ -55,6 +55,10 @@ navItem5.textContent = siteContent['nav']['nav-item-5'];
 let navItem6 = document.querySelector('nav a:nth-of-type(6)')
 navItem6.textContent = siteContent['nav']['nav-item-6'];
 
-
+//CTA MANIPULATION
 let ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
+let ctaText = document.querySelector('.cta-text h1');
+ctaText.textContent = siteContent['cta']['h1'];
+let ctaButton = document.querySelector('.cta-text button');
+ctaButton.textContent = siteContent['cta']['button'];
