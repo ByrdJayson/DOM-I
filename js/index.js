@@ -62,3 +62,16 @@ let ctaText = document.querySelector('.cta-text h1');
 ctaText.textContent = siteContent['cta']['h1'];
 let ctaButton = document.querySelector('.cta-text button');
 ctaButton.textContent = siteContent['cta']['button'];
+
+//MAIN SECTION MANIPULATION
+let middleImage = document.getElementById('middle-img');
+middleImage.setAttribute('src', siteContent['main-content']['middle-img-src']);
+let mainHeader1 = document.querySelector('.text-content:nth-of-type(1) h4');
+mainHeader1.textContent = siteContent['main-content']['features-h4'];
+let mainP1 = document.querySelector('.text-content:nth-of-type(1) p');
+mainP1.textContent = siteContent['main-content']['features-content'];
+
+let mainHeader2 = document.querySelector('.text-content:nth-of-type(2) h4');
+mainHeader2.textContent = siteContent['main-content']['about-h4'];
+let mainP2 = document.querySelector('.text-content:nth-of-type(2) p');
+mainP2.textContent = siteContent['main-content']['about-content'];
