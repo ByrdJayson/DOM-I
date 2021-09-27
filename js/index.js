@@ -65,13 +65,35 @@ ctaButton.textContent = siteContent['cta']['button'];
 
 //MAIN SECTION MANIPULATION
 let middleImage = document.getElementById('middle-img');
+
+//FIRST BLOCK
 middleImage.setAttribute('src', siteContent['main-content']['middle-img-src']);
 let mainHeader1 = document.querySelector('.text-content:nth-of-type(1) h4');
 mainHeader1.textContent = siteContent['main-content']['features-h4'];
 let mainP1 = document.querySelector('.text-content:nth-of-type(1) p');
 mainP1.textContent = siteContent['main-content']['features-content'];
-
+//SECOND BLOCK
 let mainHeader2 = document.querySelector('.text-content:nth-of-type(2) h4');
 mainHeader2.textContent = siteContent['main-content']['about-h4'];
 let mainP2 = document.querySelector('.text-content:nth-of-type(2) p');
 mainP2.textContent = siteContent['main-content']['about-content'];
+//THIRD BLOCK - BOTTOM
+let bottomHeader1 = document.querySelector('.text-content:nth-of-type(3) h4');
+bottomHeader1.textContent = siteContent['main-content']['services-h4'];
+let bottomP1 = document.querySelector('.text-content:nth-of-type(3) p');
+bottomP1.textContent = siteContent['main-content']['services-content'];
+//FOURTH BLOCK - BOTTOM
+
+
+
+let  contactHeader = document.querySelector('.contact h4');
+contactHeader.textContent = siteContent['contact']['contact-h4'];
+let  contactAddress = document.querySelector('.contact p:nth-of-type(1)');
+contactAddress.textContent = siteContent['contact']['address'];
+let  contactPhone = document.querySelector('.contact p:nth-of-type(2)');
+contactPhone.textContent = siteContent['contact']['phone'];
+let  contactEmail = document.querySelector('.contact p:nth-of-type(3)');
+contactEmail.textContent = siteContent['contact']['email'];
+
+let footer = document.querySelector('footer p');
+footer.textContent = siteContent['footer']['copyright'];
