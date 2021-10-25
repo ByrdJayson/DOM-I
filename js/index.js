@@ -43,11 +43,11 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 
 navLink1 = document.querySelector('nav a');
-navLink2 = navLink1.nextSibling;
-navLink3 = navLink2.nextSibling;
-navLink4 = navLink3.nextSibling;
-navLink5 = navLink4.nextSibling;
-navLink6 = navLink5.nextSibling;
+navLink2 = navLink1.nextElementSibling;
+navLink3 = navLink2.nextElementSibling;
+navLink4 = navLink3.nextElementSibling;
+navLink5 = navLink4.nextElementSibling;
+navLink6 = navLink5.nextElementSibling;
 
 navLink1.textContent = siteContent['nav']['nav-item-1'];
 navLink2.textContent = siteContent['nav']['nav-item-2'];
@@ -103,6 +103,13 @@ visionP.textContent = siteContent['main-content']['vision-content'];
 
 const contactH4 = document.querySelector('.contact h4');
 contactH4.textContent = siteContent['contact']['contact-h4'];
+const contactP1 = document.querySelector('.contact p');
+const contactP2 = contactP1.nextElementSibling;
+const contactP3 = contactP2.nextElementSibling;
+
+contactP1.textContent = siteContent['contact']['address'];
+contactP2.textContent = siteContent['contact']['phone'];
+contactP3.textContent = siteContent['contact']['email'];
 
 
 const footer = document.querySelector('footer p');
